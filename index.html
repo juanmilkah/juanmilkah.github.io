@@ -3,26 +3,107 @@
   <head>
     <title>Me</title>
     <style>
-      body{
-        background-color: "#181818",
-        color: "#ffffff",
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background-color: #0a0a0a;
+        color: #00ff41;
+        font-family: 'Courier New', monospace;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+      }
+      
+      .content {
+        flex: 1;
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      p {
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+      
+      b {
+        color: #00ff00;
+        font-size: 18px;
+        display: block;
+        margin: 30px 0 15px 0;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+      }
+      
+      li {
+        margin: 10px 0;
+      }
+      
+      a {
+        color: #00ff41;
+        text-decoration: none;
+        border: 1px solid #00ff41;
+        padding: 8px 16px;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+      
+      a:hover {
+        background-color: #00ff41;
+        color: #0a0a0a;
+        box-shadow: 0 0 10px #00ff41;
+      }
+      
+      footer {
+        border-top: 1px solid #00ff41;
+        padding-top: 20px;
+        margin-top: auto;
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+      }
+      
+      footer a {
+        margin-right: 20px;
+        border: none;
+        padding: 4px 8px;
+      }
+      
+      footer a:hover {
+        background-color: transparent;
+        color: #00ff00;
+        text-shadow: 0 0 5px #00ff41;
+        box-shadow: none;
       }
     </style>
   </head>
   <body>
-    <p>Systems and Backend Software Engineer with years of experience building low-level, high-performance, and scalable software solutions. I specialize in creating robust backend systems, real-time platforms, and cloud infrastructure.</p>
-    <b>Useful Links</b>
-    <ul>
-      <li>
-        <a href="projects.html">Projects</a>
-      </li>
-      <li>
-        <a href="services.html">Services</a>
-      </li>
-      <li>
-        <a href="skills.html">Skills</a>
-      </li>
-    </ul>
+    <div class="content">
+      <p>Systems and Backend Software Engineer with years of experience building low-level, high-performance, and scalable software solutions. I specialize in creating robust backend systems, real-time platforms, and cloud infrastructure.</p>
+      <b>Useful Links</b>
+      <ul>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="skills.html">Skills</a>
+        </li>
+      </ul>
+    </div>
   </body>
   <footer>
     <a href="https://github.com/juanmilkah">Github</a>

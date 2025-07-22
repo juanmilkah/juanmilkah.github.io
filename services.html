@@ -1,49 +1,197 @@
-<h2>Services</h2>
-<p>
-  <ol>
-  <li>
-    <b>System Architecture and Performance Optimization</b><br>
-    Design, refine, and optimize system architectures for high performance, scalability, and reliability.
-    <ul>
-      <li>Scalable System design</li>
-      <li>Database optimizations</li>
-      <li>Cloud and On-Prem Solutions</li>
-      <li>Load balancing and traffic Management</li>
-      <li>Latency Reduction Strategies</li>
-      <li>Security and Compliance</li>
-    </ul>
-  </li>
-  <li>
-    <b>Custom Api and Backend development</b><br>
-    Build secure, scalable, and high-performance backend systems to power your applications with seamless data flow and integrations.
-    <ul>
-      <li>Microserices Architecture</li>
-      <li>Custom Protocol Design</li>
-      <li>Third-Party Integrations</li>
-      <li>Authentication and Security hardening</li>
-    </ul> 
-  </li>
-  <li>
-    <b>E-commerce Solutions</b><br>
-    Scalable and secure online stores designed to enhance customer experience, streamline transactions, and maximize conversions.
-    <ul>
-      <li>Custom Online Stores</li>
-      <li>Inventory and Order Management</li>
-      <li>Secure Payment Integration</li>
-      <li>Perfomance Optimizations</li>
-      <li>Analytics and Reporting</li>
-    </ul>
-  </li>
-  <li>
-    <b>Automation and Workflow Optimization</b></br>
-    Streamline business operations, eliminate repetitive tasks, and boost efficiency with tailored automation solutions.
-    <ul>
-      <li>Custom Scripting</li>
-      <li>Data Processing and Reporting</li>
-      <li>Task and Workflow Management</li>
-      <li>AI Powered Solutions</li>
-      <li>Integrating with Existing tools</li>
-      <li>Business process Automation</li>
-  </li>
-  </ol>
-</p>
+<!doctype html>
+<html>
+  <head>
+    <title>Services - Me</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background-color: #0a0a0a;
+        color: #00ff41;
+        font-family: 'Courier New', monospace;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      .content {
+        flex: 1;
+      }
+      
+      h2 {
+        color: #00ff00;
+        font-size: 24px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #00ff41;
+        padding-bottom: 10px;
+      }
+      
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+        counter-reset: service-counter;
+      }
+      
+      ol > li {
+        margin: 30px 0;
+        padding: 25px;
+        border: 1px solid #003300;
+        background-color: #001a00;
+        transition: all 0.3s ease;
+        counter-increment: service-counter;
+        position: relative;
+      }
+      
+      ol > li::before {
+        content: counter(service-counter, decimal-leading-zero);
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        background-color: #00ff00;
+        color: #0a0a0a;
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      
+      ol > li:hover {
+        border-color: #00ff41;
+        background-color: #002200;
+        box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+      }
+      
+      ol > li b {
+        color: #00ff00;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+        text-shadow: 0 0 3px #00ff41;
+      }
+      
+      ol > li > br {
+        display: block;
+        margin-bottom: 15px;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0 0;
+      }
+      
+      ul li {
+        margin: 8px 0;
+        padding: 8px 15px;
+        background-color: rgba(0, 255, 65, 0.1);
+        border-left: 3px solid #00ff41;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+      
+      ul li:hover {
+        background-color: rgba(0, 255, 65, 0.2);
+        padding-left: 20px;
+      }
+      
+      .back-link {
+        color: #00ff41;
+        text-decoration: none;
+        border: 1px solid #00ff41;
+        padding: 8px 16px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+      }
+      
+      .back-link:hover {
+        background-color: #00ff41;
+        color: #0a0a0a;
+        box-shadow: 0 0 10px #00ff41;
+      }
+      
+      footer {
+        border-top: 1px solid #00ff41;
+        padding-top: 20px;
+        margin-top: auto;
+      }
+      
+      footer a {
+        margin-right: 20px;
+        border: none;
+        padding: 4px 8px;
+      }
+      
+      footer a:hover {
+        background-color: transparent;
+        color: #00ff00;
+        text-shadow: 0 0 5px #00ff41;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Services</h2>
+      <ol>
+        <li>
+          <b>System Architecture and Performance Optimization</b><br>
+          Design, refine, and optimize system architectures for high performance, scalability, and reliability.
+          <ul>
+            <li>Scalable System design</li>
+            <li>Database optimizations</li>
+            <li>Cloud and On-Prem Solutions</li>
+            <li>Load balancing and traffic Management</li>
+            <li>Latency Reduction Strategies</li>
+            <li>Security and Compliance</li>
+          </ul>
+        </li>
+        <li>
+          <b>Custom Api and Backend development</b><br>
+          Build secure, scalable, and high-performance backend systems to power your applications with seamless data flow and integrations.
+          <ul>
+            <li>Microserices Architecture</li>
+            <li>Custom Protocol Design</li>
+            <li>Third-Party Integrations</li>
+            <li>Authentication and Security hardening</li>
+          </ul> 
+        </li>
+        <li>
+          <b>E-commerce Solutions</b><br>
+          Scalable and secure online stores designed to enhance customer experience, streamline transactions, and maximize conversions.
+          <ul>
+            <li>Custom Online Stores</li>
+            <li>Inventory and Order Management</li>
+            <li>Secure Payment Integration</li>
+            <li>Performance Optimizations</li>
+            <li>Analytics and Reporting</li>
+          </ul>
+        </li>
+        <li>
+          <b>Automation and Workflow Optimization</b><br>
+          Streamline business operations, eliminate repetitive tasks, and boost efficiency with tailored automation solutions.
+          <ul>
+            <li>Custom Scripting</li>
+            <li>Data Processing and Reporting</li>
+            <li>Task and Workflow Management</li>
+            <li>AI Powered Solutions</li>
+            <li>Integrating with Existing tools</li>
+            <li>Business process Automation</li>
+          </ul>
+        </li>
+      </ol>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+    <footer>
+      <a href="https://github.com/juanmilkah">Github</a>
+      <a href="mailto:juanmilkah@proton.me">Email</a><br>
+      Juan Milkah &copy 2025 All Rights Reserved.
+    </footer>
+  </body>
+</html>
